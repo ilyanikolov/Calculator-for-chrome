@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html l="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <title>Calculator</title>
+
+   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,900' rel='stylesheet' type='text/css'>
+
+   <link rel="stylesheet" href="styles/main.css">
+   
+   <link rel="icon" href="icons/icon16.png">
+
+   <script src="js/math.min.js"></script>
+
+</head>
+<body>
+   
+   <section id="calculator">
+      
+      <section id="screen">
+         <label>
+            <span id="eq">0</span>
+            <span id="br"></span>
+         </label>
+      </section>
+
+      <section id="keys">
+
+         <section class="standart">
+            <span class="adt" id="clear">AC</span>
+            <span class="adt">Ans</span>
+            <span class="adt">%</span>
+            <span class="brn op">÷</span>
+
+            <span class="num">7</span>
+            <span class="num">8</span>
+            <span class="num">9</span>
+            <span class="brn op">×</span>
+
+            <span class="num">4</span>
+            <span class="num">5</span>
+            <span class="num">6</span>
+            <span class="brn op">-</span>
+
+            <span class="num">1</span>
+            <span class="num">2</span>
+            <span class="num">3</span>
+            <span class="brn op">+</span>
+
+            <span class="bbn num wide">0</span>
+            <span class="bbn num tb">.</span>
+            <span class="bbn brn op">=</span>
+         </section>
+
+         <section class="additional">
+            <form id="angles">
+               <input type="radio" name="option" id="degrees" value="deg">
+               <label for="degrees">radians</label>
+
+               <input type="radio" name="option" id="radians" value="rad" checked>
+               <label for="radians">degrees</label>
+
+               <div class="slider">
+                  <img src="imgs/sg.png" alt="">
+               </div>
+            </form>
+
+            <span class="adt">sin</span>
+            <span class="adt">cos</span>
+            <span class="adt">tan</span>
+
+
+            <span class="adt">ln</span>
+            <span class="adt">log</span>
+            <span class="adt">!</span>
+            
+            <span class="adt">π</span>
+            <span class="adt">e</span>
+            <span class="adt">^</span>
+            
+            <span class="adt bbn">(</span>
+            <span class="adt bbn">)</span>
+            <span class="adt bbn">√</span>
+         </section>
+
+      </section>
+
+   </section> 
+
+   
+
+   <script src="js/popup.js"></script>
+
+</body>
+</html>

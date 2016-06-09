@@ -1,0 +1,205 @@
+* {
+   font-family: 'Roboto', sans-serif;
+
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+
+   -webkit-user-select: none;
+
+   outline: none;
+}
+
+body {
+   background: url('http://subtlepatterns.com/patterns/grid.png');
+}
+
+#calculator {
+   position: relative;
+
+   width: 350px;
+   height: 250px;
+   margin: 0 auto;
+
+   outline: 1px solid #e5e5e5;
+   background: #aaa;
+}
+
+#screen label {
+   font-size: 23px;
+   font-weight: 300;
+   line-height: 50px;
+
+   position: relative;
+
+   display: inline-block;
+   overflow: hidden;
+
+   width: 100%;
+   height: 50px;
+   padding: 0 10px;
+
+   text-align: right;
+
+   color: #101010;
+   border: none;
+   border-bottom: 1px solid #e5e5e5;
+   background: #fdfffc;
+}
+
+#screen label span#br {
+   margin-left: -4px;
+
+   color: #a5a5a5;
+}
+
+#keys {
+   overflow: hidden;
+}
+
+.standart,
+.additional {
+   position: absolute;
+   top: 50px;
+   right: 0;
+
+   width: 200px;
+   height: auto;
+}
+
+.additional {
+   left: 0;
+
+   width: 150px;
+}
+
+#keys span {
+   font-size: 15px;
+   font-weight: 300;
+   line-height: 40px;
+
+   float: left;
+
+   width: 50px;
+   height: 40px;
+
+   cursor: pointer;
+   text-align: center;
+
+   color: #101010;
+   border-right: 1px solid #e5e5e5;
+   border-bottom: 1px solid #e5e5e5;
+   background: #fdfffc;
+}
+
+
+
+.additional #angles {
+   font-family: inherit;
+   font-size: 15px;
+   font-weight: 100;
+
+   position: relative;
+
+   overflow: hidden;
+
+   width: 150px;
+   height: 40px;
+   padding: 0 !important;
+
+   color: #101010;
+   border-right: 1px solid #e5e5e5;
+   border-bottom: 1px solid #e5e5e5;
+   background: #fdfffc;
+   box-shadow: inset 0 0 3px #e5e5e5;
+}
+#angles > * {
+   float: left;
+}
+#angles input[type=radio] {
+   display: none;
+   /*position: fixed;*/
+}
+#angles label {
+   line-height: 40px;
+
+   z-index: 0;
+   z-index: 1;
+
+   display: block;
+
+   width: 74px;
+   height: 40px;
+
+   cursor: pointer;
+   text-align: center;
+}
+
+.slider {
+   position: absolute;
+   top: 0;
+
+   width: 75px;
+   height: 40px;
+
+   padding: 12px 22px;
+
+   -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+       -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+           transition: all .5s ease;
+
+   border-right: 1px solid #e5e5e5;
+   box-shadow: inset 0 0 5px #fff;
+   background: #f5f5f5;
+}
+
+#degrees:checked ~ .slider {
+   left: 0;
+
+   border-left: none;
+}
+#radians:checked ~ .slider {
+   left: 75px;
+
+   border-left: 1px solid #e5e5e5;
+}
+
+
+
+#keys span:active {
+   box-shadow: inset 0 0 5px #e5e5e5;
+}
+
+#keys span.wide {
+   width: 100px;
+   padding-left: 21px;
+
+   text-align: left;
+}
+#keys span.bbn {
+   border-bottom: 0;
+}
+#keys span.brn {
+   border-right: none;
+}
+#keys span.op {
+   color: #fff;
+   background: #03a9f4;
+}
+#keys span.adt {
+   box-shadow: inset 0 0 5px #fff;
+   background: #f5f5f5;
+}
+#keys span.op:active {
+   box-shadow: inset 0 0 3px #bf6b26;
+}
+
+#keys span.num {
+   color: #202020;
+}
+
+span.tb {
+   font-weight: 500;
+}
